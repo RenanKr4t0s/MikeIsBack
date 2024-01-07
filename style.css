@@ -1,0 +1,97 @@
+:root{
+    --mont-font: 'Montserrat Alternates', sans-serif;
+    --ubun-font: 'Ubuntu', sans-serif;
+    --color-main-dark: #051d35;
+    --color-main-light:#00B9AE;
+    --color-alt-dark:#037171;
+    --color-alt-light: #02C3BD;
+}
+
+body{
+    font-family: var(--mont-font);
+    position: relative;
+}
+
+/* ------Sessions work------ */
+.session-dark{
+    background-color: var(--color-main-dark);
+}
+.session-white{
+    background-color: white;
+    z-index: 1;
+}
+.session-mid{
+    background-color: var(--color-alt-dark);
+}
+
+/* -----Modificando Bootstrap------ */
+.navbar-brand{
+    font-family: var(--ubun-font);
+    font-size: 2.5rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+.big-header{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+
+/* --------Title--------- */
+.mike-cont{
+    max-width: 95%;
+    padding: 1rem;
+    border-radius: 4rem;
+    position: absolute;
+}
+
+/* -------Features------- */
+.features__icon{
+    color: var(--color-main-light);
+}
+.testimonials__image{
+    width: 10%;
+}
+.press__logo{
+    width: 15%;
+}
+
+/* -----Testimonials------ */
+.re-carousel-title{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/* --------Pricing-------- */
+.re-card-price,
+.re-card-title{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/* ___Media Queryes___ */
+@media (min-width: 1700px){
+    .mike-cont{
+        position: static;
+    }
+}
+@media (max-width: 1028px){
+    .mike-cont{
+        position: static;
+    }
+}
+@media (max-width: 768px){
+    .mike-title{
+        text-align: center;
+    }
+    .re-carousel-title{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 480px){
+    .re-carousel-title{
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+}
